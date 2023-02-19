@@ -118,7 +118,7 @@ class NewsTileState extends State<NewsTile> {
 
   newsPhoto() {
     return CachedNetworkImage(
-      imageUrl: "$baseURL/uploads/${widget.entry.imageURL}",
+      imageUrl: widget.entry.imageURL,
       imageBuilder: (context, imageProvider) => Container(
         height: 300,
         decoration: BoxDecoration(
